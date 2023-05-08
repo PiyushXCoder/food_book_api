@@ -1,0 +1,22 @@
+version: "3.2"
+services:
+  web:
+    container_name: food_book_api
+    depends_on: 
+      - db
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - type: bind
+        source: ./etc
+        target: /app/food_book_api/etc
+      - type: bind
+        source: ./static_test
+        target: /app/food_book_api/static_test
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=phir

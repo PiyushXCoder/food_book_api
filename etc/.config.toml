@@ -1,0 +1,16 @@
+[server]
+address = ""
+shared_dir = "" # folder to store static files
+
+[database]
+url = "" # url to postgresql database
+
+[salts]
+jwt = ""
+password = ""
+
+[smtp]
+from_address = ""
+server = ""
+username = ""
+password = ""
