@@ -8,7 +8,7 @@ Food Book API is backend for Food Book which is a platform to share cooking reci
 
 * Create a directory named `static_dir`
 * Copy `.dodocker-compose.yml` as `dodocker-compose.yml`. You may wish to change password of database.
-* Copy `etc/.config.toml` as `etc/config.toml`. You database url might look like `postgresql://postgres:<your password>@db:5432/postgres`. Also note that mention `static_dir` which we created in field `static_dir`
+* Copy `etc/.config.toml` as `etc/config.toml`. Your database url might look like `postgresql://postgres:<your password>@db:5432/postgres`. Also note that mention `static_dir` which we created in field `static_dir`. Further you will have to add your smtp server credientials.
 * Run `docker compose build`
 * Run `docker compose up`
 
